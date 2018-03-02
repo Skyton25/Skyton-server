@@ -1,1 +1,1 @@
-echo worker: python worker.py > Procfile
+worker: node bot.js
