@@ -15,4 +15,4 @@
         if message.content == "Hello":
             await client.send_message(message.channel, "World")
 
-    client.run(<your bot token here>)
+    client.run(<jafywmMLK8WIoK3oW9yuG-4gzdv636CA>)
