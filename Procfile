@@ -1,1 +1,1 @@
-worker: python <botfile> .py
+echo worker: python worker.py > Procfile
