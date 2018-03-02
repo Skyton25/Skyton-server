@@ -1,18 +1,10 @@
- import discord
-    import asyncio
+const Discord = require("discord.js");
+const client = new Discord.Client;
 
-    client = discord.Client()
+client.on("message", (message) => {
+  if (message.content === ("ping")) {
+    message.replay("pong!");
+  }
+});
 
-    @client.event
-    async def on_ready():
-        print('Logged in as')
-        print(client.user.name)
-        print(client.user.id)
-        print('------')
-
-    @client.event
-    async def on_message(message):
-        if message.content == "Hello":
-            await client.send_message(message.channel, "World")
-
-    client.run(<NDE5MTMzOTEyMzMwMjcyNzc5.DXr_uQ.M3NgvCFyiIwmcPEpa1CmH4s4BR4>)
+client.login("NDE5MTMzOTEyMzMwMjcyNzc5.DXr_uQ.M3NgvCFyiIwmcPEpa1CmH4s4BR4")
