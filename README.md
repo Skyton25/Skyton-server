@@ -1,0 +1,2 @@
+# Skyton-server
+bot
