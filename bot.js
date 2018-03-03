@@ -11,5 +11,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('guildMemberAdd', guild =>{
+const canal = member.guild.channels.find('name', 'member-log');
+if (!canal) return;
+message.channel.send(`seja bem vindo ao servidor, ${member}!`);
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
